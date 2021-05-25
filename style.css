@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+
+.theme-light{
+    --primary: #fff;
+    --scendary: whitesmoke;
+    --accent: #54c75b;
+    --font-color: #000;
+    --pure: #fff
+}
+.theme-dark{
+    --primary: #121212;
+    --scendary: #0b0b0b;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure: #fff
+}
+.theme-blue{
+    --primary: #63b3c7;
+    --scendary: #e7e5e5a4;
+    --accent: #9fc754;
+    --font-color: #fff;
+    --pure: #fff
+}
+.theme-ocean{
+    --primary: #252c35;
+    --scendary: #20272e;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure: #fff
+}
+.theme-sepia{
+    --primary: #fbf1c7;
+    --scendary: #eadfb5;
+    --accent: #704214;
+    --font-color: #704214;
+    --pure: #fff
+}
+
+/*NUNITO GOOGLE FONTS*/
+font-family: 'Nunito', sans-serif;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: background .3s ease-in-out;
+}
+
+body{
+    -webkit-font-somoothing: antialiased;
+     font-family: 'Nunito', sans-serif;
+     background: var(--primary);
+     color: var(--font-color);
+}
+.container{
+    width: 1192px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+}
+nav .branding{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--accent)
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+nav ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+
+color: #e74c3c;
+
+}
+
+
+nav ul li select{
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    padding: 2px 10px;
+    outline: none;
+    color: var(--font-color);
+    border: none;
+    background: var(--scendary);
+    border-radius: 4px;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+header .hero-image img{
+    width: 1024px;
+    position: relative;
+    top: 70px;
+    right: -214px;
+}
+header h1{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+header p{
+    font-size: 1.3rem;
+    width: 70%;
+    margin-top: 1rem;
+}
+header button{
+    background: var(--accent);
+    color: var(--pure);
+    border: none;
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+header button:hover{
+    background: #0984e3;
+}
+.tutorials{
+    background: var(--scendary);
+    padding: 2rem;
+    height: 700px;
+}
